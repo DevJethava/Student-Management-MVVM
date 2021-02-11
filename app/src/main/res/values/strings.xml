@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Student Management</string>
+    <string name="label_delete">DELETE</string>
+    <string name="label_edit">EDIT</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="label_cancel">CANCEL</string>
+</resources>

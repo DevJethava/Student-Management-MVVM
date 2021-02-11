@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/grey_90"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvShow"
+            android:layout_marginTop="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/grey_80"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/layoutDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_baseline_delete_24"
+                app:tint="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivDelete"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/label_delete"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toStartOf="@id/layoutDelete"
+            android:layout_toLeftOf="@id/layoutDelete"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_baseline_edit_24"
+                app:tint="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivEdit"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/label_edit"
+                android:textColor="@color/colorPrimary"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1F1F1"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/grey_90"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvName"
+            android:layout_marginTop="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/grey_80"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</FrameLayout>
